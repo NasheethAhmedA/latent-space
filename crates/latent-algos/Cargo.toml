@@ -1,0 +1,22 @@
+[package]
+name = "latent-algos"
+description = "Algorithms written in latent space: readouts, banks, constrained choice, early-exit probes, lens, steering, extraction"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme = "../../README.md"
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+latent-core.workspace = true
+candle-core.workspace = true
+candle-nn.workspace = true
+
+[dev-dependencies]
+latent-gemma.workspace = true
+serde_json.workspace = true

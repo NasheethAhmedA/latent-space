@@ -1,0 +1,20 @@
+[package]
+name = "latent-gemma"
+description = "Gemma 3 (text) for latent-core: every stage of the forward pass exposed"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme = "../../README.md"
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+latent-core.workspace = true
+candle-core.workspace = true
+candle-nn.workspace = true
+tokenizers.workspace = true
+serde_json.workspace = true

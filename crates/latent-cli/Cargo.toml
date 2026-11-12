@@ -1,0 +1,23 @@
+[package]
+name = "latent-cli"
+description = "The `latent` command: models in the temp store, lens, readouts"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme = "../../README.md"
+keywords.workspace = true
+categories.workspace = true
+
+[[bin]]
+name = "latent"
+path = "src/main.rs"
+
+[dependencies]
+latent-core.workspace = true
+latent-gemma.workspace = true
+latent-algos.workspace = true
+candle-core.workspace = true

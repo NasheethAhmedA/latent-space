@@ -1,0 +1,28 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+license = "MIT"
+authors = ["NasheethAhmedA"]
+repository = "https://github.com/NasheethAhmedA/latent-space"
+homepage = "https://github.com/NasheethAhmedA/latent-space"
+keywords = ["llm", "interpretability", "embeddings", "transformer", "steering"]
+categories = ["science", "algorithms"]
+
+[workspace.dependencies]
+candle-core = "0.11"
+candle-nn = "0.11"
+tokenizers = { version = "0.22", default-features = false, features = ["onig"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+latent-core = { path = "crates/latent-core", version = "0.1.0" }
+latent-gemma = { path = "crates/latent-gemma", version = "0.1.0" }
+latent-algos = { path = "crates/latent-algos", version = "0.1.0" }
+
+[profile.release]
+debug = false
